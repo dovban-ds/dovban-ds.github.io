@@ -1,0 +1,210 @@
+/* Common settings */
+.container {
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+}
+/* Header */
+header {
+  margin-bottom: 140px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+nav a {
+  margin-right: 60px;
+}
+
+nav a:hover {
+  color: #535353;
+}
+
+.btn-box {
+  display: flex; /* I was trying inline-block at first, but blocks were not placing correctly */
+  justify-content: center;
+}
+
+.login {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-right: 10px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.login a:hover {
+  background-color: #d6d6d6;
+}
+
+.tryit {
+  background: #ff6336;
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  /* display: inline-block; */
+}
+
+.tryit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tryit a:hover {
+  background-color: #df6c4d;
+}
+
+/* Main */
+.d-flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.info-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  padding-right: 200px;
+}
+
+.info-box > .btn-box-one {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.book {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+
+.book a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.book a:hover {
+  background-color: #d6d6d6;
+}
+
+.additional-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.orange {
+  background-color: #ff9c7d;
+  min-width: 100%;
+  margin-top: 160px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.title-box {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  width: 720px;
+  margin: 0 auto 70px;
+}
+
+.size-fix {
+  padding-right: 61px;
+}
+
+.size-fix1 {
+  padding-right: 130px;
+  margin-bottom: 30px;
+}
+
+.size-fix > a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.size-fix > a:hover {
+  color: #535353;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
