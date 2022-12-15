@@ -1,0 +1,635 @@
+// Main
+.d-flex1 {
+  @include flex1;
+}
+
+.info {
+  &-title {
+    @include fontw-600;
+    font-size: 65px;
+    line-height: 70px;
+    margin-bottom: 50px;
+    @include max(575px) {
+      font-size: 40px;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    @include min($sm) {
+      font-size: 45px;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+  &-text {
+    @include fontw-400;
+    font-size: 25px;
+    line-height: 35px;
+    padding-right: 200px;
+    @include max(575px) {
+      padding-right: 0;
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include min($sm) {
+      padding-right: 0;
+      text-align: center;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  &-box {
+    > .btn-box-one {
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-start;
+      @include max(575px) {
+        justify-content: center;
+        margin-top: 25px;
+      }
+      @include min($sm) {
+        justify-content: center;
+        margin-top: 35px;
+      }
+    }
+    > a {
+      text-decoration: none;
+      color: $main-tcolor;
+      @include fontw-600;
+      font-size: 20px;
+      line-height: 30px;
+      @include max($xl) {
+        display: block;
+        text-align: center;
+      }
+    }
+    > a:hover {
+      color: $default-hover;
+    }
+    @include max(575px) {
+      width: 100%;
+    }
+    @include min($sm) {
+      width: 100%;
+    }
+  }
+}
+
+.tryit {
+  &-big {
+    background: $additional-bgc;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    @include fontw-600;
+    font-size: 16px;
+    line-height: 45px;
+    display: table;
+    a {
+      text-decoration: none;
+      color: $additional-tcolor;
+      display: table-cell;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+    }
+    a:hover {
+      background-color: $additional-bgc-hover;
+    }
+  }
+}
+
+.book {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  @include fontw-600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 10px;
+  display: table;
+  a {
+    text-decoration: none;
+    color: $main-tcolor;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  a:hover {
+    background-color: $additional-hover;
+  }
+}
+
+.additional-text {
+  @include fontw-400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+  @include max(575px) {
+    margin-top: 10px;
+    text-align: center;
+  }
+  @include min($sm) {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+.orange {
+  background-color: $additional-bgc;
+  margin-top: 160px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  @include max(575px) {
+    margin-top: 75px;
+    margin-bottom: 30px;
+  }
+  @include min($sm) {
+    margin-top: 50px;
+  }
+  @include min($md) {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+  @include min($xl) {
+    margin-top: 160px;
+    margin-bottom: 100px;
+  }
+}
+
+.title-box {
+  @include fontw-600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 70px;
+  @include max(575px) {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 auto 35px;
+    width: 80%;
+  }
+  @include min($sm) {
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0 auto 45px;
+    width: 80%;
+  }
+  @include min($md) {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 auto 55px;
+    width: 80%;
+  }
+  @include min($xl) {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 70px;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  @include max(575px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include min($sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include min($md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include min($xl) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  img {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.wheat {
+  background-color: #fff8e4;
+  padding-bottom: 60px;
+  margin-bottom: 150px;
+  @include max(575px) {
+    margin-bottom: 50px;
+  }
+  @include min($sm) {
+    margin-bottom: 75px;
+  }
+  @include min($md) {
+    margin-bottom: 100px;
+  }
+  @include min($xl) {
+    margin-bottom: 150px;
+  }
+}
+
+.title-cards {
+  @include fontw-600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+  @include max(575px) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  @include min($sm) {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+  @include min($md) {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 65px;
+  }
+  @include min($xl) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 80px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 31%;
+  margin-bottom: 80px;
+  margin-right: 20px;
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+  &-title {
+    @include fontw-600;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    margin: 26px 0 20px;
+  }
+  &-descrip {
+    @include fontw-400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.cards-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.card-next {
+  &-title {
+    @include fontw-600;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 50px 0 35px;
+    @include max($md) {
+      margin: 15px 0 10px;
+    }
+  }
+  &-descrip {
+    @include fontw-400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    @include max($md) {
+      margin-bottom: 10px;
+    }
+  }
+  & > a {
+    @include fontw-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $main-tcolor;
+  }
+  & > a:hover {
+    color: $default-hover;
+  }
+  @include max($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  @include min($md) {
+    flex-basis: 33%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.blue {
+  background: #c9e8f2;
+  margin-top: 180px;
+  padding: 100px 0 50px;
+  &-text {
+    @include fontw-400;
+    font-size: 30px;
+    line-height: 40px;
+    &-small {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 25px;
+    }
+  }
+  @include max(575px) {
+    margin-top: 50px;
+  }
+  @include min($sm) {
+    margin-top: 100px;
+  }
+  @include min($md) {
+    margin-top: 135px;
+  }
+  @include min($xl) {
+    margin-top: 180px;
+  }
+}
+
+.brown {
+  background-color: #dabc98;
+  padding: 80px 0;
+  margin-bottom: 160px;
+  @include max(575px) {
+    margin-bottom: 50px;
+  }
+  @include min($sm) {
+    margin-bottom: 80px;
+  }
+  @include min($md) {
+    margin-bottom: 120px;
+  }
+  @include min($xl) {
+    margin-bottom: 160px;
+  }
+}
+
+.text {
+  @include fontw-600;
+  font-size: 35px;
+  line-height: 50px;
+  width: 40%;
+  @include max(575px) {
+    font-size: 20px;
+    line-height: 25px;
+    width: 40%;
+  }
+  @include min($sm) {
+    font-size: 25px;
+    line-height: 30px;
+    width: 50%;
+  }
+  @include min($md) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 65%;
+    margin-left: 15px;
+  }
+  @include min($xl) {
+    font-size: 35px;
+    line-height: 50px;
+    margin-left: 20px;
+  }
+}
+
+.group-logo {
+  border-left: 1px solid black;
+  @include max($md) {
+    margin-left: 5px;
+  }
+}
+
+.bird {
+  &-title {
+    @include fontw-600;
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+    width: 60%;
+    @include max(575px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    @include min($sm) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @include min($md) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    @include min($xl) {
+      font-size: 65px;
+      line-height: 75px;
+    }
+  }
+  &-descrip {
+    @include fontw-400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    width: 50%;
+    + .image {
+      margin-top: 25px;
+    }
+    @include max(575px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    @include min($sm) {
+      font-size: 22px;
+      line-height: 25px;
+    }
+    @include min($md) {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    @include min($xl) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}
+
+.d-flex2 {
+  @include flex2;
+}
+
+.integrations {
+  background: $additional-bgc;
+  width: 190px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  @include fontw-600;
+  font-size: 16px;
+  line-height: 45px;
+  margin: 35px 0 160px;
+  display: table;
+  a {
+    text-decoration: none;
+    color: $additional-tcolor;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    &:hover {
+      background-color: $additional-bgc-hover;
+    }
+  }
+  @include max(575px) {
+    margin: 35px 0 50px;
+  }
+  @include min($sm) {
+    margin: 35px 0 80px;
+  }
+  @include min($md) {
+    margin: 35px 0 120px;
+  }
+  @include min($xl) {
+    margin: 35px 0 160px;
+  }
+}
+
+.orange1 {
+  background-color: $additional-bgc;
+  padding: 120px 0 160px;
+  @include max(575px) {
+    padding: 50px 0 60px;
+  }
+  @include min($sm) {
+    padding: 75px 0 85px;
+  }
+  @include min($md) {
+    padding: 100px 0 110px;
+  }
+  @include min($xl) {
+    padding: 120px 0 160px;
+  }
+}
+
+.localization {
+  @include fontw-600;
+  font-size: 65px;
+  line-height: 75px;
+  text-align: center;
+  width: 60%;
+  &-text {
+    @include fontw-400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 55px;
+    @include max(575px) {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin: 15px 0 25px;
+    }
+    @include min($sm) {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin: 20px 0 35px;
+    }
+    @include min($md) {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin: 30px 0 55px;
+    }
+    @include min($xl) {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin: 30px 0 55px;
+    }
+  }
+  @include max(575px) {
+    font-size: 35px;
+    line-height: 45px;
+    width: 80%;
+  }
+  @include min($sm) {
+    font-size: 40px;
+    line-height: 50px;
+    width: 80%;
+  }
+  @include min($md) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  @include min($xl) {
+    font-size: 65px;
+    line-height: 75px;
+  }
+}
+
+.tryit-black {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  @include fontw-600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 10px;
+  display: table;
+  background: $main-tcolor;
+  a {
+    text-decoration: none;
+    color: $additional-tcolor;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    &:hover {
+      background-color: #2b2a2a;
+    }
+  }
+}

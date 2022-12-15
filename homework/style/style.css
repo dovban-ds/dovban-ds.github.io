@@ -1,0 +1,631 @@
+/* Common settings */
+.container {
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+.fix {
+  margin-bottom: 250px;
+}
+
+.fix1 {
+  margin-left: 60px;
+}
+
+.fix2 {
+  margin-bottom: 100px;
+}
+
+.fix3 {
+  margin-bottom: 50px;
+}
+/* Header */
+header {
+  margin-bottom: 140px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+nav a {
+  margin-right: 60px;
+}
+
+nav a:hover {
+  color: #535353;
+}
+
+.btn-box {
+  display: flex; /* I was trying inline-block at first, but blocks were not placing correctly */
+  justify-content: center;
+}
+
+.login {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-right: 10px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.login a:hover {
+  background-color: #d6d6d6;
+}
+
+.tryit {
+  background: #ff6336;
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+.tryit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tryit a:hover {
+  background-color: #df6c4d;
+}
+
+/* Main */
+.d-flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.info-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  padding-right: 200px;
+}
+
+.info-box > .btn-box-one {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tryit-big {
+  background: #ff6336;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  display: table;
+}
+
+.tryit-big a {
+  text-decoration: none;
+  color: #ffffff;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.tryit-big a:hover {
+  background-color: #df6c4d;
+}
+
+.book {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 10px;
+  display: table;
+}
+
+.book a {
+  text-decoration: none;
+  color: #000000;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.book a:hover {
+  background-color: #d6d6d6;
+}
+
+.additional-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.orange {
+  background-color: #ff9c7d;
+  min-width: 1440px;
+  margin-top: 160px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.title-box {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  width: 720px;
+  margin: 0 auto 70px;
+}
+
+.size-fix {
+  padding-right: 61px;
+}
+
+.size-fix1 {
+  padding-right: 107px;
+  margin-bottom: 30px;
+}
+
+.info-box > a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.info-box > a:hover {
+  color: #535353;
+}
+
+.size-fix > a:hover {
+  color: #535353;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wheat {
+  background-color: #fff8e4;
+  min-width: 1440px;
+  padding-bottom: 60px;
+  margin-bottom: 150px;
+}
+
+.title-cards {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.size-fix2 {
+  padding-top: 120px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 23%;
+  margin-right: 125px;
+  margin-bottom: 80px;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  margin: 26px 0 20px;
+}
+
+.card-descrip {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.cards-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-next {
+  flex-basis: 28%;
+}
+
+.card-next-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 50px 0 35px;
+}
+
+.card-next-descrip {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.card-next > a {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.card-next > a:hover {
+  color: #535353;
+}
+
+.blue {
+  background: #c9e8f2;
+  min-width: 1440px;
+  margin-top: 180px;
+  padding: 100px 0 50px;
+}
+
+.blue-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.blue-text-small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.brown {
+  min-width: 1440px;
+  background-color: #dabc98;
+  padding: 80px 0;
+  margin-bottom: 160px;
+}
+
+.text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  width: 461px;
+}
+
+.group-logo {
+  border-left: 1px solid black;
+}
+
+.bird-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 75px;
+  text-align: center;
+  width: 790px;
+}
+
+.bird-descrip {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  width: 540px;
+}
+
+.bird-descrip + .image {
+  margin-top: 25px;
+}
+
+.d-flex2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.integrations {
+  background: #ff6336;
+  width: 190px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin: 35px 0 160px;
+  display: table;
+}
+
+.integrations a {
+  text-decoration: none;
+  color: #ffffff;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.integrations a:hover {
+  background-color: #df6c4d;
+}
+
+.orange1 {
+  min-width: 1440px;
+  background-color: #ff9c7d;
+  padding: 120px 0 160px;
+}
+
+.localization {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 75px;
+  text-align: center;
+  width: 785px;
+}
+
+.localization-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin: 30px 0 55px;
+}
+
+.tryit-black {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 10px;
+  display: table;
+  background: #000000;
+}
+
+.tryit-black a {
+  text-decoration: none;
+  color: #ffffff;
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.tryit-black a:hover {
+  background-color: #2b2a2a;
+}
+
+/* Footer */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.block-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.block-text {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.block-title + .image {
+  margin: 30px 0 35px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-title {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.list-descrip > li {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.list-descrip {
+  margin-top: 20px;
+}
+
+.list-descrip li {
+  margin-bottom: 15px;
+}
+
+.list {
+  margin-right: 100px;
+  flex-basis: 20%;
+}
+
+.list:last-child {
+  margin-right: 0;
+}
+
+.list-title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.list-title a:hover {
+  color: #535353;
+}
+
+.list-descrip a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.list-descrip a:hover {
+  color: #535353;
+}
+
+.divider {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 1440px;
+}
+
+.box-text {
+  margin-left: 15px;
+  flex-grow: 1;
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.rights {
+  font-family: "Graphik LCG";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
