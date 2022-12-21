@@ -1,0 +1,166 @@
+@keyframes banner {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200px);
+  } // kind of hack to copy animation from mockup
+}
+
+.top_banner {
+  p {
+    @include font($font, "normal", 300);
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $maincolor-w;
+    animation-name: banner;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @include max($md) {
+      font-size: 0.75rem;
+      line-height: 7px;
+      padding: 7px 0;
+      font-weight: 900; // it makes text readable in my opinion
+    }
+    @include max($sm) {
+      font-size: 0.7rem;
+      line-height: 5px;
+      padding: 5px 0;
+      font-weight: 900;
+    }
+  }
+  background-color: $mainbgcolor-b;
+  padding: 15px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu {
+  height: 25vh;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  .logo_wrap {
+    align-self: center;
+    width: 20%;
+    @include min($md) {
+      width: 15%;
+    }
+    @include min($xl) {
+      width: 12%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    div {
+      @include font($font, "normal", 300);
+      font-size: 18px;
+      line-height: 17px;
+      @include max($sm) {
+        font-size: 0.9rem;
+        line-height: 14px;
+      }
+      @include min($xl) {
+        font-weight: 900;
+      }
+      a {
+        text-decoration: none;
+        color: $addcolor-b;
+      }
+      a:hover {
+        color: $maincolor-w;
+        animation-name: opacity;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        @keyframes opacity {
+          from {
+            opacity: 1;
+            color: $maincolor-w;
+          }
+          to {
+            opacity: 0.4;
+            color: $addcolor-b;
+          }
+        }
+      }
+    }
+    @include min($md) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-basis: 50%;
+    }
+    @include min($xl) {
+      flex-basis: 45%;
+    }
+  }
+  .btn {
+    box-shadow: 0px 11px 22px rgba(0, 0, 0, 0.22);
+    border-radius: 12px;
+    align-self: center;
+    box-sizing: border-box;
+    height: 7vh;
+    width: 20%;
+    background-color: $mainbgcolor-b;
+    display: table;
+    @include min($md) {
+      width: 15%;
+    }
+    @include min($xl) {
+      width: 12%;
+    }
+    @include max($sm) {
+      height: 5vh;
+      width: 20%;
+    }
+    a {
+      display: table-cell;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      @include font($font, "normal", 300);
+      font-size: 18px;
+      line-height: 17px;
+      color: #ffffff;
+      text-align: center;
+      vertical-align: middle;
+      @include max($sm) {
+        font-size: 0.9rem;
+        line-height: 13px;
+      }
+    }
+    a:hover {
+      color: $maincolor-w;
+      animation-name: opacitybg;
+      animation-duration: 0.7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      @keyframes opacitybg {
+        from {
+          opacity: 1;
+          background-color: $mainbgcolor-b;
+          border-radius: 12px;
+          color: $maincolor-w;
+        }
+        to {
+          opacity: 0.4;
+          background-color: $maincolor-w;
+          border-radius: 12px;
+          color: $addcolor-b;
+        }
+      }
+    }
+  }
+}
